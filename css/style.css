@@ -33,16 +33,20 @@
 }
 
 main {
+    padding: 0 40px;
     padding-top: 30px;
     background-color: #DDDDDD;
     display: flex;
     width: 100%;
-    height: 80vh;
-    justify-content: space-around;
+    /* height: 80vh; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
 }
 
 .box {
-    width: calc(70% / 5);
+    width: calc(90% / 5);
+    margin-left: 20px;
+    margin-top: 20px;
     height: 120px;
     border: 1px solid black;
     display: flex;
