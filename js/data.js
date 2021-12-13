@@ -1,3 +1,4 @@
+
 const boxes = [
 	{
 		name: 'cat',
@@ -139,11 +140,11 @@ const filter = document.getElementById("filter");
 	  if (filter.value == animal.value) {
 		main.innerHTML = " ";
 
-		let colorOrange = boxes.filter((element) => {
-			return element.color == "orange";
+		let animalArray = boxes.filter((element) => {
+			return element.type == "animal";
 		});
 
-		colorOrange.forEach((element) => {
+		animalArray.forEach((element) => {
 			main.innerHTML += `
 				<div class="box">
 				<i class="fas fa-${element.name}" style="color:${element.color}"></i>
@@ -154,11 +155,11 @@ const filter = document.getElementById("filter");
 	  } else if (filter.value == vegetable.value) {
 		main.innerHTML = " ";
 
-		let colorGreen = boxes.filter((element) => {
-			return element.color == "green";
+		let vegetableArray = boxes.filter((element) => {
+			return element.type == "vegetable";
 		});
 
-		colorGreen.forEach((element) => {
+		vegetableArray.forEach((element) => {
 			main.innerHTML += `
 				<div class="box">
 				<i class="fas fa-${element.name}" style="color:${element.color}"></i>
@@ -169,11 +170,11 @@ const filter = document.getElementById("filter");
 	  } else if (filter.value == user.value) {
 		main.innerHTML = " ";
 
-		let colorBlue = boxes.filter((element) => {
-			return element.color == "blue";
+		let userArray = boxes.filter((element) => {
+			return element.type == "user";
 		});
 
-		colorBlue.forEach((element) => {
+		userArray.forEach((element) => {
 			main.innerHTML += `
 				<div class="box">
 				<i class="fas fa-${element.name}" style="color:${element.color}"></i>

@@ -33,8 +33,7 @@
 }
 
 main {
-    padding: 0 40px;
-    padding-top: 30px;
+    padding: 30px 40px;
     background-color: #DDDDDD;
     display: flex;
     width: 100%;
